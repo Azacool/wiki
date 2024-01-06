@@ -1,0 +1,10 @@
+version: '3.10'
+
+services:
+  web:
+    build:
+      context: .
+    volumes:
+      - ./storage:/app/storage
+    ports:
+      - 8000:8000
